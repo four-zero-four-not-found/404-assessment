@@ -1,12 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../dist/output.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-['Oswald'] max-w-[1200px] mx-auto">
+    <header
+      class="bg-white rounded-full shadow-lg border border-gray-300 mx-4 mt-4"
+    >
+      <nav class="flex justify-between items-center px-3 py-2 relative">
+        <a class="text-[22px] font-bold cursor-pointer m-2 text-[#4B352A]"
+          >FotoMood</a
+        >
+
+        <ul class="hidden md:flex items-center text-[#583b2d]">
+          <li>
+            <a
+              class="px-5 py-2 rounded-lg hover:bg-[#583b2d] transition duration-200 ease-in-out hover:text-white"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-5 py-2 rounded-lg hover:bg-[#583b2d] transition duration-200 ease-in-out hover:text-white"
+              href="#"
+              >Explore</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-5 py-2 rounded-lg hover:bg-[#583b2d] transition duration-200 ease-in-out hover:text-white"
+              href="#"
+              >Create</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-5 py-2 rounded-lg hover:bg-[#583b2d] transition duration-200 ease-in-out hover:text-white"
+              href="#"
+              >Update</a
+            >
+          </li>
+        </ul>
+        <input
+          type="search"
+          placeholder="Search your memories..."
+          class="hidden md:flex py-1 px-2 w-[200px] border rounded-lg"
+        />
+        <div class="hidden md:flex items-center gap-4">
+          <i class="fa-regular fa-moon text-xl cursor-pointer"></i>
+
+          <img
+            src="../src/assets/img/icon/Paradise.jpg"
+            class="w-11 h-11 rounded-full border border-gray-400 cursor-pointer"
+          />
+        </div>
+        <div class="md:hidden flex items-center gap-3">
+          <button id="search-btn">
+            <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+            <i class="fa-regular fa-moon text-xl cursor-pointer"></i>
+          </button>
+
+          <!-- Hamburger Button -->
+          <button id="menu-btn" class="flex flex-col gap-1 cursor-pointer">
+            <span class="w-6 h-0.5 bg-black transition-all"></span>
+            <span class="w-6 h-0.5 bg-black transition-all"></span>
+            <span class="w-6 h-0.5 bg-black transition-all"></span>
+          </button>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 delay-200 ease-in-out absolute p-4 top-full left-0 w-full bg-white border mt-3 rounded-xl shadow-lg z-50"
+        >
+          <ul class="flex flex-col items-center gap-4 py-4 w-full">
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-200 transition duration-200 ease-in-out"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-200 transition duration-200 ease-in-out"
+                href="#"
+              >
+                Explore
+              </a>
+            </li>
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-200 transition duration-200 ease-in-out"
+                href="#"
+              >
+                Create
+              </a>
+            </li>
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-200 transition duration-200 ease-in-out"
+                href="#"
+              >
+                Update
+              </a>
+            </li>
+          </ul>
+
+          <div class="flex justify-left pb-4">
+            <img
+              src="../src/assets/img/icon/Paradise.jpg"
+              class="w-12 h-12 rounded-full border border-gray-400 cursor-pointer"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-8 text-gray-800">
+          FotoMood Gallery
+        </h1>
+
+        <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
+          <!-- Card 1 -->
+          <div class="masonry-item mb-2">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (10).jpg"
+                alt="Mountain"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">
+                  Mountain Landscape
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item mb-2">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (10).jpg"
+                alt="Mountain"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">
+                  Mountain Landscape
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (11).jpg"
+                alt="Beach"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">
+                  Tropical Paradise
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (11).jpg"
+                alt="Beach"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">
+                  Tropical Paradise
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (12).jpg"
+                alt="Nature"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mb-2">
+                  Misty Mountains
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (4).jpg"
+                alt="Forest"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">Deep Forest</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (6).jpg"
+                alt="Lake"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">Peaceful Lake</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (8).jpg"
+                alt="Trail"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">Forest Trail</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/Phnom Penh, Cambodia back around in 1954.jpg"
+                alt="Peak"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">Summit View</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/Tourists buying souvenirs at the Bayon, Angkor, postcard 1960 — at Siem Reap, Cambodia_.jpg"
+                alt="Sunset"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">Golden Hour</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (7).jpg"
+                alt="Valley"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">Green Valley</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="masonry-item">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/card-img/download (8).jpg"
+                alt="Flowers"
+                class="w-full"
+              />
+              <div class="p-2">
+                <h3 class="font-semibold text-gray-800 mt-2">Wildflowers</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        if (menu.classList.contains("max-h-0")) {
+          // OPEN MENU
+          menu.classList.remove("max-h-0", "opacity-0");
+          menu.classList.add("max-h-[500px]", "opacity-100");
+        } else {
+          // CLOSE MENU
+          menu.classList.add("max-h-0", "opacity-0");
+          menu.classList.remove("max-h-[500px]", "opacity-100");
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </body>
 </html>
