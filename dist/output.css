@@ -928,12 +928,6 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
-  .lg-\[2083px\]\:mt-\[450px\] {
-    margin-top: 450px;
-  }
-}
-
 @media (min-width: 2000px) {
   .screen2000\:mt-\[450px\] {
     margin-top: 450px;
