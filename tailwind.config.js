@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        screen2000: "2000px",
+      },
       keyframes: {
         fadeUp: {
           "0%": { opacity: 0, transform: "translateY(20px)" },
