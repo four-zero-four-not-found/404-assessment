@@ -1,103 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../dist/output.css">
-</head>
-<body>
-    <body class="bg-cover bg-center h-screen flex justify-center items-center relative overflow-hidden backdrop-blur-lg" 
-    style="background-image: url('https://i.pinimg.com/736x/33/c4/dc/33c4dcfd9ae9b3d102b4eca8124fe5bd.jpg');">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
 
-    
+  <body
+    class="bg-cover bg-center h-screen flex justify-center items-center relative overflow-hidden backdrop-blur-lg"
+    style="
+      background-image: url('https://i.pinimg.com/736x/33/c4/dc/33c4dcfd9ae9b3d102b4eca8124fe5bd.jpg');
+    "
+  >
     <!-- Container -->
-    <div class="bg-white/20 backdrop-blur-md rounded-[30px] p-8 w-[350px] shadow-xl">
-    
-
-    <!-- Text Section -->
-    <div class="text-center mb-8">
+    <div
+      class="bg-white/20 backdrop-blur-md rounded-[30px] p-8 w-[350px] shadow-xl"
+    >
+      <!-- Text Section -->
+      <div class="text-center mb-8">
         <h2 class="login text-3xl font-bold text-black mb-2">Create Account</h2>
         <p class="login text-lg">Sign up to get started</p>
-    </div>
-        
-    <!-- Form Section -->
-    <form class="space-y-5">
-    <!-- Full Name Input -->
-    <div>
-        <label for="fullname" class="block text-sm font-medium text-black px-4 py-1 mt-6">
-            Full Name
-        </label>
-        <input 
-            type="text" 
-            id="fullname"
-            placeholder="Your Name"
-            class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"/>
-    </div>
+      </div>
 
-    <!-- Email Input -->
-    <div>
-        <label for="email" class="block text-sm font-medium text-black px-4 py-1 mt-6">
-            Email Address
+      <!-- Form Section -->
+      <!-- Full Name Input -->
+      <div>
+        <label
+          for="fullname"
+          class="block text-sm font-medium text-black px-4 py-1 mt-6"
+        >
+          Full Name
         </label>
-        <input 
-            type="email" 
-            id="email"
-            placeholder="Your Email"
-            class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"/>
-    </div>
+        <input
+          type="text"
+          id="fullname"
+          placeholder="Your Name"
+          class="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
+        />
+      </div>
 
-    <!-- Password Input -->
-    <div>
-        <label for="password" class="block text-sm font-medium text-black px-4 py-1 mt-6">
-            Password
+      <!-- Email Input -->
+      <div>
+        <label
+          for="email"
+          class="block text-sm font-medium text-black px-4 py-1 mt-6"
+        >
+          Email Address
         </label>
-        <input 
-            type="password" 
-            id="password"
-            placeholder="••••••••"
-            class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"/>
-    </div>
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
+        />
+      </div>
 
-    <!-- Confirm Password Input -->
-    <div>
-        <label for="confirm-password" class="block text-sm font-medium text-black px-4 py-1 mt-6">
-            Confirm Password
+      <!-- Password Input -->
+      <div>
+        <label
+          for="password"
+          class="block text-sm font-medium text-black px-4 py-1 mt-6"
+        >
+          Password
         </label>
-        <input 
-            type="password" 
-            id="confirm-password"
-            placeholder="••••••••"
-            class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"/>
-    </div>
+        <input
+          type="password"
+          id="password"
+          placeholder="••••••••"
+          class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
+        />
+      </div>
 
-    <!-- Comfirm Condition -->
-    <div class="flex items-start">
-        <input 
-            type="checkbox" 
-            id="terms"
-            class="w-4 h-4 mt-1 rounded border-white/30 bg-white/20 text-white focus:ring-white/50"/>
+      <!-- Confirm Password Input -->
+      <div>
+        <label
+          for="confirm-password"
+          class="block text-sm font-medium text-black px-4 py-1 mt-6"
+        >
+          Confirm Password
+        </label>
+        <input
+          type="password"
+          id="confirm-password"
+          placeholder="••••••••"
+          class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
+        />
+      </div>
+
+      <!-- Comfirm Condition -->
+      <div class="flex items-start">
+        <input
+          type="checkbox"
+          id="terms"
+          class="w-4 h-4 mt-1 rounded border-white/30 bg-white/20 text-white focus:ring-white/50"
+        />
         <label for="terms" class="ml-2 text-sm text-white">
-            I agree to the 
-            <a href="#" class="font-semibold hover:text-black transition">Terms of Service</a>
-                and 
-            <a href="#" class="font-semibold hover:text-black transition">Privacy Policy</a>
+          I agree to the
+          <a href="#" class="font-semibold hover:text-black transition"
+            >Terms of Service</a
+          >
+          and
+          <a href="#" class="font-semibold hover:text-black transition"
+            >Privacy Policy</a
+          >
         </label>
+      </div>
+
+      <!-- Login Button -->
+      <div class="mt-6">
+        <button
+          class="w-full py-3 px-4 mt-6 mb-2 rounded-full bg-gray-500 text-white text-lg font-semibold hover:scale-105 hover:bg-black transition duration-200"
+        >
+          Sign Up
+        </button>
+      </div>
+
+      <!-- Link Section -->
+      <div class="px-4 mt-4 mb-2 text-center text-black">
+        <p>
+          Already have an account?
+          <a href="../src/login.html" class="text-blue-500 hover:underline"
+            >Login</a
+          >
+        </p>
+      </div>
     </div>
-
-    <!-- Login Button -->
-        <div class="mt-6">
-            <button class="w-full py-3 px-4 mt-6 mb-2 rounded-full bg-gray-500 text-white text-lg font-semibold hover:scale-105 hover:bg-black transition duration-200">
-                Sign Up
-            </button>
-        </div>
-
-    <!-- Link Section -->
-        <div class="px-4 mt-4 mb-2 text-center text-black">
-            <p>Already have an account? <a href="../src/login.html" class="text-blue-500 hover:underline">Login</a></p>
-        </div>
-    </div>
-
-</body>
+  </body>
 </html>
