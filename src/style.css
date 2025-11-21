@@ -9,3 +9,29 @@
 body {
   @apply font-['Special Elite' ];
 }
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop to fill */
+  z-index: -1; /* behind content */
+}
+
+/* Optional dark overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+  
+}
+.signup {
+  background: #e7e7e7;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+}
+body{
+  height: 500vh;
+}

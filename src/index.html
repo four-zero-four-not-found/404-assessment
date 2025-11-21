@@ -19,24 +19,28 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body
     style="
-      background-image: url(../src/assets/img/record-player_gif.gif);
+      background-image: url(./assets/img/icon/trainn.gif);
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
     "
   >
+    <!-- <video class="bg-video" autoplay muted loop playsinline>
+      <source src="./assets/video/IMG_0429.MP4" />
+    </video> -->
     <div class="container max-w-[1200px] mx-auto">
       <nav
-        class="w-full text-[#ECECEC] flex items-center justify-between mt-2 px-4"
+        class="w-full text-[#ECECEC] flex items-center justify-between mt-6 border px-4 py-2 rounded-full"
       >
         <div class="flex items-center space-x-3">
           <div class="flex flex-col">
-            <h1 class="text-[28px] md:text-[35px] font-bold">FotoMood</h1>
-            <span class="text-[11px] md:text-[13px] font-bold -mt-2">
+            <h1 class="text-[20px] md:text-[20px] font-bold ml-4">FotoMood</h1>
+            <span class="text-[11px] md:text-[10px] font-bold -mt-2 ml-4">
               just do what you love...
             </span>
           </div>
@@ -44,7 +48,7 @@
 
         <!-- Desktop Menu -->
         <div
-          class="hidden md:flex items-center space-x-6 text-[16px] md:text-[20px] font-bold"
+          class="hidden md:flex items-center space-x-6 text-[14px] md:text-[15px] font-bold"
         >
           <a href="#" class="hover:underline transition-all duration-300"
             >About</a
@@ -54,14 +58,14 @@
           <a href="#" class="hover:underline">News</a>
 
           <!-- Buttons -->
-          <div class="text-white space-x-2">
+          <div class="text-white space-x-2 text-[16px]">
             <button
-              class="bg-[#4B352A] hover:bg-[#583b2d] text-white px-5 py-2 rounded-full transition-all duration-200"
+              class="border text-white px-4 py-2 rounded-full transition-all duration-200"
             >
               Login
             </button>
             <button
-              class="bg-[#4B352A] font-bold hover:bg-[#583b2d] text-white px-4 py-2 rounded-full transition-all duration-200"
+              class="signup bg-[#e7e7e7] font-bold hover:bg-[#1D1D1D] border border-white hover:text-white text-black px-4 py-2 rounded-full transition-all duration-200"
             >
               Sign up
             </button>
@@ -103,58 +107,192 @@
     </div>
 
     <!-- SEARCH BAR -->
-    <div
-      class="w-full max-w-xl mx-auto px-4 mt-[150px] md:mt-[200px] screen2000:mt-[450px]"
-    >
-      <div
-        class="flex items-center bg-white border border-gray-300 rounded-full overflow-hidden shadow-sm"
-      >
-        <input
-          type="text"
-          placeholder="Search your memories..."
-          class="w-full px-5 py-4 md:py-5 text-sm focus:outline-none"
-        />
-      </div>
-    </div>
 
     <!-- TITLE -->
     <div
-      class="text-[40px] md:text-[60px] font-bold h-10 text-center text-white mt-6"
+      class="text-[40px] md:text-[70px] font-bold h-10 text-center text-white mt-[250px]"
     >
-      Get your next!
+      FotoMood!
     </div>
 
     <!-- ANIMATED TEXT -->
     <div
       class="h-[80px] md:h-[100px] overflow-hidden text-center text-white mt-[20px] md:mt-[30px]"
     >
+      <span class="text-[25px] mr-2"> Find whatever you want</span>
+
       <span
-        id="fadeText"
-        class="inline-block text-[40px] md:text-[60px] font-bold animate-fadeUp"
-      ></span>
+        id="swapText"
+        class="inline-block text-[16px] border p-3 mt-6 rounded-full md:text-[20px] font-bold transition-opacity duration-700"
+        >Hacker</span
+      >
+    </div>
+    <div class="scroll-section">
+      <div
+        class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out text-5xl md:text-[40px] font-light tracking-tight mt-[400px] text-center text-white"
+      >
+        <h1>
+          Save from anywhere <br />
+          with our extensions
+        </h1>
+        <div class="gap-4 mt-8">
+          <button
+            class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out px-5 py-4 rounded-full border border-white/20 text-white/90 backdrop-blur-sm hover:border-white/40 text-[22px]"
+          >
+            <i class="fab fa-chrome"></i> 
+          </button>
+
+          <button
+            class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out px-5 py-4 rounded-full border border-white/20 text-white/90 backdrop-blur-sm hover:border-white/40 text-[22px]"
+          >
+            <i class="fab fa-safari"></i> 
+          </button>
+
+          <button
+            class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out px-5 py-4 rounded-full border border-white/20 text-white/90 backdrop-blur-sm hover:border-white/40 text-[22px]"
+          >
+            <i class="fab fa-apple"></i>
+          </button>
+        </div>
+      </div>
+      <!-- <div class="absolute right-0 mr-[200px] -mt-[200px] ">
+        <img src="./assets/img/card-img/noyou.jpg" alt="" class="w-[200px] rounded-lg">
+      </div> -->
+      <div
+        class="text-white max-w-[1200px] mx-auto mt-[300px] text-center py-4 rounded-lg"
+      >
+        <p class="mt-4 text-[40px]">
+          Recommend Your Vibe
+          <br />
+          Find your own here.
+        </p>
+        <div class="scroll-section">
+          <div
+            class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-2 m-5"
+          >
+            <div class="masonry-item break-inside-avoid">
+              <div
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[600ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer "
+              >
+                <img
+                  src="./assets/img/homecard/No You Shut Up.jpg"
+                  class="w-full rounded-lg mt-[50px]"
+                />
+              </div>
+            </div>
+
+            <div class="masonry-item break-inside-avoid">
+              <div
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[700ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer p-3"
+              >
+                <img
+                  src="./assets/img/homecard/download (17).jpg"
+                  class="w-full rounded-lg"
+                />
+              </div>
+            </div>
+
+            <div class="masonry-item break-inside-avoid">
+              <div
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[800ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
+              >
+                <img
+                  src="./assets/img/homecard/Cambodia, Phnom Penh, Traditional Dance Performance, Shadow Puppets.jpg"
+                  class="w-full rounded-lg mt-[60px]"
+                />
+              </div>
+            </div>
+
+            <div class="masonry-item break-inside-avoid">
+              <div
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
+              >
+                <img
+                  src="./assets/img/homecard/Bayon.jpg"
+                  class="w-full rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-white max-w-[1200px] mx-auto text-center  rounded-lg"
+      >
+        <div class="scroll-section">
+          <div
+            class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-2 "
+          >
+            <div class="masonry-item break-inside-avoid">
+              <div
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[600ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer "
+              >
+                <img
+                  src="./assets/img/homecard/Howard Sochurek - Google Arts & Culture.jpg"
+                  class="w-full rounded-lg mt-[50px]"
+                />
+              </div>
+            </div>
+
+            <div class="masonry-item break-inside-avoid">
+              <div
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[700ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer "
+              >
+                <img
+                  src="./assets/img/homecard/download (18).jpg"
+                  class="w-full rounded-lg"
+                />
+              </div>
+            </div>
+
+            <div class="masonry-item break-inside-avoid">
+              <div
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[800ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
+              >
+                <img
+                  src="./assets/img/homecard/CAMBODIA - Ancient Cambodian Royal Ballet in ( Angkor Wat ) Photos by French & English Website.jpg"
+                  class="w-full rounded-lg mt-[60px]"
+                />
+              </div>
+            </div>
+
+            <div class="masonry-item break-inside-avoid">
+              <div
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
+              >
+                <img
+                  src="./assets/img/homecard/🇰🇭Her Royal Highness Samdech Reach Botrei Preah Ream Norodom Buppha Devi.jpg"
+                  class="w-full rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
-      const messages = [
-        "Welcome to my website!",
-        "weeknight dinner idea",
-        "Vintage idea.",
-      ];
+      const words = ["designers", "developers", "artists", "creators"];
+      let index = 0;
 
-      let i = 0;
-      const el = document.getElementById("fadeText");
+      const el = document.getElementById("swapText");
 
-      function showText() {
-        el.classList.remove("animate-fadeUp");
-        void el.offsetWidth;
-        el.textContent = messages[i];
-        el.classList.add("animate-fadeUp");
+      function swapWord() {
+        // Fade out
+        el.style.opacity = 0;
 
-        i = (i + 1) % messages.length;
+        setTimeout(() => {
+          // Change text
+          index = (index + 1) % words.length;
+          el.textContent = words[index];
+
+          // Fade back in
+          el.style.opacity = 1;
+        }, 700); // matches Tailwind fade duration
       }
 
-      showText();
-      setInterval(showText, 2500);
+      // Change every 2.5 seconds
+      setInterval(swapWord, 2500);
 
       // MOBILE MENU TOGGLE
       const menu = document.getElementById("mobile-menu");
@@ -163,6 +301,26 @@
       menuBtn.addEventListener("click", () => {
         menu.classList.toggle("hidden");
       });
+
+      //scroll animation
+      const revealElements = document.querySelectorAll(".scroll-reveal");
+
+      function scrollReveal() {
+        revealElements.forEach((el, i) => {
+          const rect = el.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight - 100;
+
+          if (isVisible) {
+            setTimeout(() => {
+              el.classList.remove("opacity-0", "translate-y-8");
+              el.classList.add("opacity-100", "translate-y-0");
+            }, i * 150); // stagger animation like COSMOS (~150ms)
+          }
+        });
+      }
+
+      window.addEventListener("scroll", scrollReveal);
+      scrollReveal();
     </script>
   </body>
 </html>
