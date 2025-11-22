@@ -35,3 +35,53 @@ body::before {
 body{
   height: 500vh;
 }
+     @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(var(--rotate-start)); }
+            50% { transform: translateY(-20px) rotate(var(--rotate-end)); }
+        }
+        
+        @keyframes floatSlow {
+            0%, 100% { transform: translate(0, 0) rotate(var(--rotate-start)); }
+            50% { transform: translate(10px, -15px) rotate(var(--rotate-end)); }
+        }
+        
+        .polaroid {
+            animation: float 6s ease-in-out infinite;
+            --rotate-start: -5deg;
+            --rotate-end: 5deg;
+        }
+        
+        .polaroid:nth-child(2n) {
+            animation: floatSlow 8s ease-in-out infinite;
+            animation-delay: -2s;
+            --rotate-start: 8deg;
+            --rotate-end: -8deg;
+        }
+        
+        .polaroid:nth-child(3n) {
+            animation-delay: -4s;
+            --rotate-start: -12deg;
+            --rotate-end: 3deg;
+        }
+        
+        .polaroid:nth-child(4n) {
+            animation-delay: -1s;
+            --rotate-start: 5deg;
+            --rotate-end: -10deg;
+        }
+    .polaroid {
+        transform: rotate(var(--rotation, 0deg));
+        transition: transform 0.3s ease;
+      }
+      
+      @media (max-width: 768px) {
+        .polaroid {
+          transform: scale(0.7) rotate(var(--rotation, 0deg));
+        }
+      }
+      
+      @media (max-width: 640px) {
+        .polaroid {
+          transform: scale(0.5) rotate(var(--rotation, 0deg));
+        }
+      }

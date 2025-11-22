@@ -1,59 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal Archives - Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body style="height: 300vh;">
-    <section class="scroll-section mt-[400px]">
-      <h2
-        class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out text-5xl md:text-7xl font-light tracking-tight"
-      >
-        Save from anywhere <br />
-        with our extensions
-      </h2>
-
-      <div class="flex gap-4 mt-8">
-        <button
-          class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out px-5 py-2 rounded-full border border-white/20 text-white/90 backdrop-blur-sm hover:border-white/40"
-        >
-          <i class="fab fa-chrome"></i> Chrome
-        </button>
-
-        <button
-          class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out px-5 py-2 rounded-full border border-white/20 text-white/90 backdrop-blur-sm hover:border-white/40"
-        >
-          <i class="fab fa-safari"></i> Safari
-        </button>
-
-        <button
-          class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out px-5 py-2 rounded-full border border-white/20 text-white/90 backdrop-blur-sm hover:border-white/40"
-        >
-          <i class="fab fa-apple"></i> iOS
-        </button>
-      </div>
-    </section>
-  </body>
-  <script>
-    const revealElements = document.querySelectorAll(".scroll-reveal");
-
-    function scrollReveal() {
-      revealElements.forEach((el, i) => {
-        const rect = el.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight - 100;
-
-        if (isVisible) {
-          setTimeout(() => {
-            el.classList.remove("opacity-0", "translate-y-8");
-            el.classList.add("opacity-100", "translate-y-0");
-          }, i * 150); // stagger animation like COSMOS (~150ms)
+    <style>
+        .image-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
         }
-      });
-    }
 
-    window.addEventListener("scroll", scrollReveal);
-    scrollReveal();
-  </script>
+        .social-icon {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            width: 32px;
+            height: 32px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            grid-auto-flow: dense;
+        }
+
+        .masonry-item-tall {
+            grid-row: span 2;
+        }
+
+        .masonry-item-wide {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-white min-h-screen">
+    <!-- Header Section -->
+    <header class="max-w-7xl mx-auto px-6 py-12">
+        <div class="text-center mb-8">
+            <h1 class="text-5xl font-serif mb-4">Ethereal Archives</h1>
+            <p class="text-gray-400 mb-6">
+                700 Followers • By @aurora 
+                <svg class="inline w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                </svg>
+            </p>
+            
+            <!-- Profile Image -->
+            <div class="flex justify-center mb-6">
+                <div class="w-20 h-20 rounded-full bg-gray-700 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop" alt="Profile" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <!-- Follow Button -->
+            <button class="px-8 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition">
+                Follow
+            </button>
+        </div>
+    </header>
+
+    <!-- Masonry Grid -->
+    <main class="max-w-7xl mx-auto px-6 pb-12">
+        <div class="masonry-grid">
+            <!-- Image 1 - Tall -->
+            <div class="image-card masonry-item-tall">
+                <img src="https://images.unsplash.com/photo-1611173822131-71c3c4e88b57?w=600&h=900&fit=crop" alt="Minimalist figure" class="w-full h-full object-cover">
+                <div class="social-icon">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=600&h=600&fit=crop" alt="Abstract circle" class="w-full h-full object-cover">
+                <div class="social-icon">
+                    <span class="text-white text-xs font-bold">✦✦</span>
+                </div>
+            </div>
+
+            <!-- Image 3 - Tall -->
+            <div class="image-card masonry-item-tall">
+                <img src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=600&h=900&fit=crop" alt="Dark figure" class="w-full h-full object-cover">
+                <div class="social-icon">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Image 4 - Wide & Tall -->
+            <div class="image-card masonry-item-tall">
+                <img src="https://images.unsplash.com/photo-1583391265824-f10d764d9b00?w=600&h=900&fit=crop" alt="Ethereal figure" class="w-full h-full object-cover">
+                <div class="social-icon">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=600&h=600&fit=crop" alt="Water reflection" class="w-full h-full object-cover">
+                <div class="social-icon">
+                    <span class="text-white text-xs font-bold">✦✦</span>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&h=600&fit=crop" alt="Dark abstract" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Image 7 -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=600&h=600&fit=crop" alt="Floating papers" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Image 8 -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&h=600&fit=crop" alt="Warm tones" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Image 9 -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1617791160588-241658c0f566?w=600&h=600&fit=crop" alt="Silhouette" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </main>
+</body>
 </html>

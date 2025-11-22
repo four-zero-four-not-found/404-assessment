@@ -22,24 +22,128 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body
-    style="
-      background-image: url(./assets/img/icon/trainn.gif);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    "
-  >
-    <!-- <video class="bg-video" autoplay muted loop playsinline>
-      <source src="./assets/video/IMG_0429.MP4" />
-    </video> -->
+  <body class="bg-black z-10">
     <div class="container max-w-[1200px] mx-auto">
+      <div class="absolute inset-0 pointer-events-none">
+        <div
+          class="polaroid absolute top-20 left-10 w-40 h-50 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/Cambodia old photos.jpg"
+            alt="Design"
+            class="w-full h-30 object-cover"
+          />
+        </div>
+
+        <div
+          class="polaroid absolute top-32 left-[200px] w-30 h-30 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/cambodia.jpg"
+            alt="Design"
+            class="w-full h-28 object-cover"
+          />
+        </div>
+
+        <!-- Top Right -->
+        <div
+          class="polaroid absolute top-24 right-32 w-36 h-45 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/cambodian vintage movie 🇰🇭.jpg"
+            alt="Design"
+            class="w-full h-33 object-cover"
+          />
+        </div>
+
+        <div
+          class="polaroid absolute top-48 right-14 w-32 h-33 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/download (10).jpg"
+            alt="Design"
+            class="w-full h-30 object-cover"
+          />
+        </div>
+
+        <!-- Left Side -->
+        <div
+          class="polaroid absolute top-80 left-20 w-36 h-36 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/download (12).jpg"
+            alt="Design"
+            class="w-full h-32 object-cover"
+          />
+        </div>
+
+        <div
+          class="polaroid absolute bottom-40 left-40 w-[170px] h-38 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/Tourists buying souvenirs at the Bayon, Angkor, postcard 1960 — at Siem Reap, Cambodia_.jpg"
+            alt="Design"
+            class="w-full h-30 object-cover"
+          />
+        </div>
+
+        <!-- Right Side -->
+        <div
+          class="polaroid absolute top-1/2 right-24 w-28 h-30 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/Gilles Marcil.jpg"
+            alt="Design"
+            class="w-full h-25 object-cover"
+          />
+        </div>
+        <div
+          class="polaroid absolute top-28 right-[300px] w-28 h-30 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/noyou.jpg"
+            alt="Design"
+            class="w-full h-25 object-cover"
+          />
+        </div>
+
+        <div
+          class="polaroid absolute bottom-32 right-48 w-36 h-44 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/HugeDomains_com.jpg"
+            alt="Design"
+            class="w-full h-30 object-cover"
+          />
+        </div>
+
+        <!-- Center Scattered -->
+        <div
+          class="polaroid absolute top-40 left-1/3 w-[150px] h-22 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/Independent Monument 1969_ Created in 1958 and decorated with 100 naga's heads_.jpg"
+            alt="Design"
+            class="w-full h-21 object-cover"
+          />
+        </div>
+
+        <div
+          class="polaroid absolute bottom-48 right-1/3 w-[150px] h-30 bg-white p-2 shadow-2xl"
+        >
+          <img
+            src="./assets/img/card-img/Sinn Sisamouth  Design by SokHeng - Kelly Korn.jpg"
+            alt="Design"
+            class="w-full h-30 object-cover"
+          />
+        </div>
+      </div>
       <nav
-        class="w-full text-[#ECECEC] flex items-center justify-between mt-6 border px-4 py-2 rounded-full"
+        class="w-full text-[#ECECEC] flex items-center justify-between mt-6 border px-4 py-2 rounded-full relative z-10"
       >
         <div class="flex items-center space-x-3">
           <div class="flex flex-col">
-            <h1 class="text-[20px] md:text-[20px] font-bold ml-4">FotoMood</h1>
+            <h1 class="text-[20px] md:text-[20px] font-bold ml-4">FotoMood®</h1>
             <span class="text-[11px] md:text-[10px] font-bold -mt-2 ml-4">
               just do what you love...
             </span>
@@ -108,16 +212,15 @@
 
     <!-- SEARCH BAR -->
 
-    <!-- TITLE -->
     <div
-      class="text-[40px] md:text-[70px] font-bold h-10 text-center text-white mt-[250px]"
+      class="text-[40px] md:text-[70px] font-bold h-10 text-center text-white mt-[250px] relative z-50"
     >
       FotoMood!
     </div>
 
     <!-- ANIMATED TEXT -->
     <div
-      class="h-[80px] md:h-[100px] overflow-hidden text-center text-white mt-[20px] md:mt-[30px]"
+      class="h-[80px] overflow-hidden text-center md:h-screen text-white mt-[20px] md:mt-[30px] relative z-50"
     >
       <span class="text-[25px] mr-2"> Find whatever you want</span>
 
@@ -127,9 +230,12 @@
         >Hacker</span
       >
     </div>
+
+    <!-- TITLE -->
+
     <div class="scroll-section">
       <div
-        class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out text-5xl md:text-[40px] font-light tracking-tight mt-[400px] text-center text-white"
+        class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out text-5xl md:text-[40px] font-light tracking-tight md:mt-0 text-center text-white"
       >
         <h1>
           Save from anywhere <br />
@@ -139,13 +245,13 @@
           <button
             class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out px-5 py-4 rounded-full border border-white/20 text-white/90 backdrop-blur-sm hover:border-white/40 text-[22px]"
           >
-            <i class="fab fa-chrome"></i> 
+            <i class="fab fa-chrome"></i>
           </button>
 
           <button
             class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out px-5 py-4 rounded-full border border-white/20 text-white/90 backdrop-blur-sm hover:border-white/40 text-[22px]"
           >
-            <i class="fab fa-safari"></i> 
+            <i class="fab fa-safari"></i>
           </button>
 
           <button
@@ -170,9 +276,11 @@
           <div
             class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-2 m-5"
           >
-            <div class="masonry-item break-inside-avoid">
+            <div
+              class="masonry-item break-inside-avoid hover:scale-105 transition-transform duration-300 relative"
+            >
               <div
-                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[600ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer "
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[600ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
               >
                 <img
                   src="./assets/img/homecard/No You Shut Up.jpg"
@@ -181,7 +289,9 @@
               </div>
             </div>
 
-            <div class="masonry-item break-inside-avoid">
+            <div
+              class="masonry-item break-inside-avoid hover:scale-105 transition-transform duration-300"
+            >
               <div
                 class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[700ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer p-3"
               >
@@ -192,7 +302,9 @@
               </div>
             </div>
 
-            <div class="masonry-item break-inside-avoid">
+            <div
+              class="masonry-item break-inside-avoid hover:scale-105 transition-transform duration-300"
+            >
               <div
                 class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[800ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
               >
@@ -203,7 +315,9 @@
               </div>
             </div>
 
-            <div class="masonry-item break-inside-avoid">
+            <div
+              class="masonry-item break-inside-avoid hover:scale-105 transition-transform duration-300"
+            >
               <div
                 class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
               >
@@ -216,16 +330,16 @@
           </div>
         </div>
       </div>
-      <div
-        class="text-white max-w-[1200px] mx-auto text-center  rounded-lg"
-      >
+      <div class="text-white max-w-[1200px] mx-auto text-center rounded-lg">
         <div class="scroll-section">
           <div
-            class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-2 "
+            class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-2"
           >
-            <div class="masonry-item break-inside-avoid">
+            <div
+              class="masonry-item break-inside-avoid hover:scale-105 transition-transform duration-300"
+            >
               <div
-                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[600ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer "
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[600ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
               >
                 <img
                   src="./assets/img/homecard/Howard Sochurek - Google Arts & Culture.jpg"
@@ -234,9 +348,11 @@
               </div>
             </div>
 
-            <div class="masonry-item break-inside-avoid">
+            <div
+              class="masonry-item break-inside-avoid hover:scale-105 transition-transform duration-300"
+            >
               <div
-                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[700ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer "
+                class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[700ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
               >
                 <img
                   src="./assets/img/homecard/download (18).jpg"
@@ -245,7 +361,9 @@
               </div>
             </div>
 
-            <div class="masonry-item break-inside-avoid">
+            <div
+              class="masonry-item break-inside-avoid hover:scale-105 transition-transform duration-300"
+            >
               <div
                 class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[800ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
               >
@@ -256,7 +374,9 @@
               </div>
             </div>
 
-            <div class="masonry-item break-inside-avoid">
+            <div
+              class="masonry-item break-inside-avoid hover:scale-105 transition-transform duration-300"
+            >
               <div
                 class="scroll-reveal opacity-0 translate-y-8 transition-all duration-[900ms] ease-out rounded-lg overflow-hidden hover:shadow-xl cursor-pointer"
               >
@@ -264,6 +384,123 @@
                   src="./assets/img/homecard/🇰🇭Her Royal Highness Samdech Reach Botrei Preah Ream Norodom Buppha Devi.jpg"
                   class="w-full rounded-lg"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-x-hidden">
+        <div class="min-h-screen pt-32 pb-20 px-8">
+          <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-12 gap-12">
+              <!-- Left Content -->
+              <div class="col-span-5 flex flex-col justify-center pr-8  ">
+           
+                <p class="text-gray-400 text-[20px] leading-relaxed mt-24">
+                  Find anything in your library with ease. Your FotoMood is an
+                  intelligent sanctuary of information, ready to be searched and
+                  resurfaced.
+                </p>
+              </div>
+
+              <!-- Right Gallery Grid -->
+              <div class="col-span-7 relative">
+                <div class="relative w-full" style="height: 900px">
+                  <!-- Image 1 - Top Left -->
+                  <div
+                    class="image-card absolute top-0 left-0 w-56 h-80 rounded-2xl overflow-hidden mt-[150px] scroll-reveal "
+                  >
+                    <img
+                      src="./assets/last-main/Old photos of ancient Khmer theater.jpg"
+                      alt="Fashion 1"
+                      class="w-full h-full object-cover "
+                    />
+                  </div>
+
+                  <!-- Image 2 - Top Right -->
+                  <div
+                    class="image-card absolute top-0 right-0 w75 h-60 rounded-2xl overflow-hidden mr-[245px] mt-[110px]"
+                  >
+                    <img
+                      src="./assets/last-main/Isabel Muñoz.jpg"
+                      alt="Sculpture"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Search Bar - Center -->
+                  <div
+                    class="absolute z-30 left-1/2 top-96 transform -translate-x-1/2 w-[250px]"
+                  >
+                    <div
+                      class="bg-black bg-opacity-90 backdrop-blur-xl rounded-full px-6 py-4 flex items-center gap-3 shadow-2xl border border-white"
+                    >
+                      <svg
+                        class="w-5 h-5 text-gray-400 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        ></path>
+                      </svg>
+                      <input
+                        type="text"
+                        placeholder="Your vibe is here"
+                        class="bg-transparent flex-1 outline-none text-white  text-base"
+                      />
+                   
+                    </div>
+                  </div>
+
+                  <!-- Image 3 - Bottom Left -->
+                  <div
+                    class="image-card absolute bottom-0 left-0 w-52 h-64 rounded-2xl overflow-hidden mb-[130px] ml-[40px]"
+                  >
+                    <img
+                      src="./assets/last-main/elephant.jpg"
+                      alt="Fashion 2"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Image 4 - Middle Right -->
+                  <div
+                    class="image-card absolute top-[220px] right-0 w-56 h-64 rounded-2xl overflow-hidden "
+                  >
+                    <img
+                      src="./assets/last-main/CAMBODIA - Ancient Cambodian Royal Ballet in ( Angkor Wat ) Photos by French & English Website (1).jpg"
+                      alt="Fashion 3"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Image 5 - Bottom Center -->
+                  <div
+                    class="image-card absolute bottom-0 left-48 w-56 h-60 rounded-2xl overflow-hidden ml-[70px] mb-[180px]"
+                  >
+                    <img
+                      src="./assets/last-main/Angkor Wat unknown year!.jpg"
+                      alt="Fashion 4"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Image 6 - Bottom Right -->
+                  <div
+                    class="image-card absolute bottom-0 right-0 w-52 h-64 rounded-2xl overflow-hidden mb-[140px] mr-[10px]"
+                  >
+                    <img
+                      src="./assets/last-main/Ancient Cambodian (King Norodom) Photos by French & English Website.jpg"
+                      alt="Art"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
