@@ -22,7 +22,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-black z-10">
+  <body class="bg-black z-10" id="darkmode">
     <div class="container max-w-[1200px] mx-auto">
       <div class="absolute inset-0 pointer-events-none">
         <div
@@ -139,7 +139,7 @@
         </div>
       </div>
       <nav
-        class="w-full text-[#ECECEC] flex items-center justify-between mt-6 border px-4 py-2 rounded-full relative z-10"
+        class="w-full text-[#ECECEC] flex items-center justify-between mt-6 border px-4 py-2 rounded-full relative z-10 "
       >
         <div class="flex items-center space-x-3">
           <div class="flex flex-col">
@@ -155,12 +155,10 @@
         <div
           class="hidden md:flex items-center space-x-6 text-[14px] md:text-[15px] font-bold"
         >
-          <a href="#" class="hover:underline transition-all duration-300"
-            >Social</a
-          >
-          <a href="#" class="hover:underline">Create</a>
-          <a href="#" class="hover:underline">Foto</a>
-          <a href="#" class="hover:underline">AboutUs</a>
+          <a href="#" class="hover:border hover:rounded-full p-2">Social</a>
+          <a href="#" class="hover:border hover:rounded-full p-2">Create</a>
+          <a href="#" class="hover:border hover:rounded-full p-2">Foto</a>
+          <a href="#" class="hover:border hover:rounded-full p-2">AboutUs</a>
 
           <!-- Buttons -->
           <div class="text-white space-x-2 text-[16px]">
@@ -189,12 +187,28 @@
       <!-- MOBILE MENU -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden bg-[#2d2220]/70 backdrop-blur-md mt-4 p-4 rounded-lg text-white space-y-3"
+        class="hidden md:hidden bg-black backdrop-blur-md mt-4 p-4 rounded-lg text-white space-y-3"
       >
-        <a href="#" class="block text-lg font-semibold">About</a>
-        <a href="#" class="block text-lg font-semibold">Businesses</a>
-        <a href="#" class="block text-lg font-semibold">Create</a>
-        <a href="#" class="block text-lg font-semibold">News</a>
+        <a
+          href="#"
+          class="block text-lg font-semibold hover:border hover:border-white py-2 rounded-full text-center"
+          >About</a
+        >
+        <a
+          href="#"
+          class="block text-lg font-semibold hover:border hover:border-white py-2 rounded-full text-center"
+          >Businesses</a
+        >
+        <a
+          href="#"
+          class="block text-lg font-semibold hover:border hover:border-white py-2 rounded-full text-center"
+          >Create</a
+        >
+        <a
+          href="#"
+          class="block text-lg font-semibold hover:border hover:border-white py-2 rounded-full text-center"
+          >News</a
+        >
 
         <div class="pt-3 space-y-3">
           <button
@@ -203,7 +217,7 @@
             Login
           </button>
           <button
-            class="w-full bg-[#4B352A] py-2 rounded-full hover:bg-[#583b2d]"
+            class="w-full bg-white text-black py-2 rounded-full hover:bg-black hover:text-white hover:border"
           >
             Sign up
           </button>
