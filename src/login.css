@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
-.foto {
-  font-family: "Special Elite", cursive;
+body {
+  font-family: "Special Elite", system-ui;
+  
 }
 
-.body {
-  background-color: #f5e9d3;
-}
 .nature a:hover {
   background-color: #3b2e16;
 }
@@ -49,7 +47,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: 10px; 
   }
 }
 .dd {
