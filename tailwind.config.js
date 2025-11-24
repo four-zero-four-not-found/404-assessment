@@ -16,6 +16,9 @@ module.exports = {
         fadeUp: "fadeUp 0.8s ease-out forwards",
       },
     },
-  },
-  plugins: [],
+    animation: {
+      fadeUp: "fadeUp 0.8s ease-out forwards",
+      'loop-worm' : ' scrollLoop 25s linear infinite',
+    }
+  }
 };
