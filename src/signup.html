@@ -9,6 +9,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../dist/output.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.24/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.24/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body
@@ -17,118 +27,114 @@
       background-image: url('https://i.pinimg.com/736x/33/c4/dc/33c4dcfd9ae9b3d102b4eca8124fe5bd.jpg');
     "
   >
-    <!-- Container -->
-    <div
-      class="bg-white/20 backdrop-blur-md rounded-[30px] p-8 w-[350px] shadow-xl"
-    >
-      <!-- Text Section -->
-      <div class="text-center mb-8">
-        <h2 class="login text-3xl font-bold text-black mb-2">Create Account</h2>
-        <p class="login text-lg">Sign up to get started</p>
-      </div>
+    <form action="" class="space-y-4">
+      <div
+        class="bg-white/20 backdrop-blur-md rounded-[30px] p-8 w-[450px] shadow-xl"
+      >
+        <!-- Text Section -->
+        <div class="text-center mb-8">
+          <h2 class="login text-3xl font-bold text-black mb-2">
+            Create Account
+          </h2>
+          <p class="login text-lg">Sign up to get started</p>
+        </div>
 
-      <!-- Form Section -->
-      <!-- Full Name Input -->
-      <div>
-        <label
-          for="fullname"
-          class="block text-sm font-medium text-black px-4 py-1 mt-6"
-        >
-          Full Name
-        </label>
-        <input
-          type="text"
-          id="fullname"
-          placeholder="Your Name"
-          class="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
-        />
-      </div>
+        <!-- Form Section -->
 
-      <!-- Email Input -->
-      <div>
-        <label
-          for="email"
-          class="block text-sm font-medium text-black px-4 py-1 mt-6"
-        >
-          Email Address
-        </label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Your Email"
-          class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
-        />
-      </div>
-
-      <!-- Password Input -->
-      <div>
-        <label
-          for="password"
-          class="block text-sm font-medium text-black px-4 py-1 mt-6"
-        >
-          Password
-        </label>
-        <input
-          type="password"
-          id="password"
-          placeholder="••••••••"
-          class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
-        />
-      </div>
-
-      <!-- Confirm Password Input -->
-      <div>
-        <label
-          for="confirm-password"
-          class="block text-sm font-medium text-black px-4 py-1 mt-6"
-        >
-          Confirm Password
-        </label>
-        <input
-          type="password"
-          id="confirm-password"
-          placeholder="••••••••"
-          class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
-        />
-      </div>
-
-      <!-- Comfirm Condition -->
-      <div class="flex items-start">
-        <input
-          type="checkbox"
-          id="terms"
-          class="w-4 h-4 mt-1 rounded border-white/30 bg-white/20 text-white focus:ring-white/50"
-        />
-        <label for="terms" class="ml-2 text-sm text-white">
-          I agree to the
-          <a href="#" class="font-semibold hover:text-black transition"
-            >Terms of Service</a
+        <div>
+          <label
+            for="fullname"
+            class="block text-sm font-medium text-black px-4 py-1 mt-6"
           >
-          and
-          <a href="#" class="font-semibold hover:text-black transition"
-            >Privacy Policy</a
-          >
-        </label>
-      </div>
+            Full Name
+          </label>
+          <input
+            type="text"
+            id="fullname"
+            placeholder="Your Name"
+            class="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
+          />
+        </div>
 
-      <!-- Login Button -->
-      <div class="mt-6">
-        <button
-          class="w-full py-3 px-4 mt-6 mb-2 rounded-full bg-gray-500 text-white text-lg font-semibold hover:scale-105 hover:bg-black transition duration-200"
-        >
-          Sign Up
-        </button>
-      </div>
-
-      <!-- Link Section -->
-      <div class="px-4 mt-4 mb-2 text-center text-black">
-        <p>
-          Already have an account?
-          <a href="../src/login.html" class="text-blue-500 hover:underline"
-            >Login</a
+        <!-- Email Input -->
+        <div>
+          <label
+            for="email"
+            class="block text-sm font-medium text-black px-4 py-1 mt-6"
           >
-        </p>
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
+          />
+        </div>
+
+        <!-- Password Input -->
+        <div>
+          <label
+            for="password"
+            class="block text-sm font-medium text-black px-4 py-1 mt-6"
+          >
+            Password
+          </label>
+          <input
+            type="password"
+            id="password"
+            placeholder="••••••••"
+            class="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
+          />
+        </div>
+
+        <!-- Confirm Password Input -->
+        <div>
+          <label
+            for="confirm-password"
+            class="block text-sm font-medium text-black px-4 py-1 mt-6"
+          >
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="••••••••"
+            class="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border rounded-full border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition"
+          />
+        </div>
+
+        <!-- Comfirm Condition -->
+        <div class="flex items-start mt-4">
+          <input
+            type="checkbox"
+            id="terms"
+            class="w-4 h-4 mt-e rounded border-white/30 bg-white/20 text-white focus:ring-white/50"
+          />
+          <label for="terms" class="ml-2 text-sm text-white">
+            I agree to the Terms of Service and Privacy Policy
+          </label>
+        </div>
+
+        <!-- Login Button -->
+        <div class="mt-6">
+          <button
+            class="w-full py-3 px-4 mt-6 mb-2 rounded-full bg-gray-500 text-white text-lg font-semibold hover:scale-105 hover:bg-black transition duration-200"
+          >
+            Sign Up
+          </button>
+        </div>
+
+        <!-- Link Section -->
+        <div class="px-4 mt-4 mb-2 text-center text-black">
+          <p>
+            Already have an account?
+            <a href="../src/login.html" class="text-blue-500 hover:underline"
+              >Login</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>
