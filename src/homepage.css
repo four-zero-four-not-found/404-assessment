@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+   
 }
 
 /* Header */
@@ -19,7 +20,7 @@ header {
 
 .site-header {
     height: var(--header-height);
-    background: linear-gradient(#fff, #ffffff);
+  
     display: flex;
     align-items: center;
     justify-content: space-between;

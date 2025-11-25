@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+body {
+  font-family: "Special Elite", system-ui;
+  
+}
+
+.nature a:hover {
+  background-color: #3b2e16;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-worm {
+  animation: scrollLoop 25s linear;
+}
+
+.animate-worm:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 1138px) {
+  .sidebar-50 {
+    width: 15rem; /* 240px */
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 910px) {
+  .sidebar-50 {
+    width: 15rem; /* 240px */
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 10px; 
+  }
+}
+.dd {
+  display: none;
+}
+
+@media (max-width: 621px) {
+  .dd {
+    font-size: 20px;
+    display: flex;
+  }
+}
+.group:hover svg path:nth-child(1) {
+  fill: #4285f4;
+}
+.group2:hover svg path:nth-child(1) {
+  fill: #ffffff;
+}
+.group:hover svg path:nth-child(2) {
+  fill: #34a853;
+}
+.group:hover svg path:nth-child(3) {
+  fill: #fbbc05;
+}
+.group:hover svg path:nth-child(4) {
+  fill: #ea4335;
+}

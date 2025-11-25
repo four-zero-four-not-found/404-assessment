@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="max-w-[1200px] mx-auto bg-black text-white">
+    <header class="bg-transparent rounded-lg shadow-lg mx-4 mt-2">
+      <nav class="flex justify-between items-center px-3 py-3 relative">
+        <div class="flex">
+          <div class="flex flex-col m-1 ml-5">
+            <h1 class="text-[20px] md:text-[28px] font-bold">FotoMood</h1>
+            <span class="text-[11px] md:text-[8px] font-bold -mt-2">
+              just do what you love...
+            </span>
+          </div>
+        </div>
+
+        <ul class="hidden md:flex items-center">
+          <li>
+            <a
+              class="px-5 py-4 rounded-full font-bold hover:bg-black hover:border-white hover:border"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-5 py-4 rounded-full font-bold hover:bg-black hover:border-white hover:border transition duration-200 linear"
+              href="#"
+              >Explore</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="px-5 py-4 rounded-full font-bold hover:bg-black hover:border-white hover:border transition duration-200 linear"
+              href="./homepage.html"
+              >categories</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-5 py-4 rounded-full font-bold hover:bg-black hover:border-white hover:border transition duration-200 linear"
+              href="#"
+              >Update</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-5 py-4 rounded-full font-bold hover:bg-black hover:border-white hover:border transition duration-200 linear"
+              href="#"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-5 py-4 rounded-full font-bold hover:bg-black hover:border-white hover:border transition duration-200 linear"
+              href="#"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <div class="hidden md:flex items-center gap-4">
+          <i class="fa-regular fa-moon text-xl cursor-pointer"></i>
+
+          <img
+            src="../src/assets/img/icon/Paradise.jpg"
+            class="w-11 h-11 rounded-full border border-black shadow-lg cursor-pointer"
+          />
+        </div>
+        <div class="md:hidden flex items-center gap-3">
+          <button id="search-btn">
+            <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+            <i class="fa-regular fa-moon text-xl cursor-pointer"></i>
+          </button>
+
+          <!-- Hamburger Button -->
+          <button id="menu-btn" class="flex flex-col gap-1 cursor-pointer">
+            <span class="w-6 h-0.5 bg-white transition-all"></span>
+            <span class="w-6 h-0.5 bg-white transition-all"></span>
+            <span class="w-6 h-0.5 bg-white transition-all"></span>
+          </button>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 delay-200 linear absolute p-4 top-full left-0 w-full bg-black border mt-3 rounded-xl shadow-lg z-50"
+        >
+          <ul class="flex flex-col items-center gap-4 py-4 w-full">
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-full hover:bg-black hover:border-white hover:border transition duration-200 linear"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-full hover:bg-black hover:border-white hover:border transition duration-200 linear"
+                href="#"
+              >
+                Explore
+              </a>
+            </li>
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-full hover:bg-black hover:border-white hover:border transition duration-200 linear"
+                href="#"
+              >
+                Create
+              </a>
+            </li>
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-full hover:bg-black hover:border-white hover:border transition duration-200 linear"
+                href="#"
+              >
+                Update
+              </a>
+            </li>
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-full hover:bg-black hover:border-white hover:border transition duration-200 linear"
+                href="#"
+              >
+                Contact
+              </a>
+            </li>
+            <li class="w-full">
+              <a
+                class="block w-full text-left px-3 py-2 rounded-full hover:bg-black hover:border-white hover:border transition duration-200 linear"
+                href="#"
+              >
+                About
+              </a>
+            </li>
+          </ul>
+
+          <div class="flex justify-left pb-4">
+            <img
+              src="../src/assets/img/icon/Paradise.jpg"
+              class="w-12 h-12 rounded-full border border-gray-400 cursor-pointer"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mx-auto px-4 py-8">
+        <div class="relative w-[500px] text-center mx-auto mb-8">
+          <input
+            type="text"
+            placeholder="Find your memories...."
+            class="w-full py-4 pl-5 pr-12 rounded-full shadow-md outline-none border bg-black border-white placeholder-white"
+          />
+
+          <button
+            class="absolute right-2 top-1/2 -translate-y-1/2 border border-white p-2 bg-black w-10 h-10 rounded-full flex items-center justify-center shadow"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 6l6 6-6 6"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div
+          class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 space-y-2"
+        >
+          <!-- Card 1 -->
+          <div class="masonry-item break-inside-avoid">
+            <div class="rounded-lg overflow-hidden cursor-pointer">
+              <img
+                src="./assets/img/card-img/Cambodia Post Forum on Postage Stamps and Stamps on Khmer Traditions and Culture_   Frequently Asked.jpg"
+                alt="Mountain"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Cambodian Heritage Stamps</div>
+                <div class="image-description">
+                  Traditional Khmer culture and postage collection
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 1 Duplicate -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/cambodia.jpg"
+                alt="Mountain"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Ancient Cambodia</div>
+                <div class="image-description">
+                  Historic temples and cultural sites
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Cambodian Surf Rockers Were Awesome, but the Khmer Rouge Killed Them (1).jpg"
+                alt="Beach"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Cambodian Surf Rock Era</div>
+                <div class="image-description">
+                  1960s music scene and cultural revolution
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 Duplicate -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/cyclo- pedicab in Saigon, Vietnam.jpg"
+                alt="Beach"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Cyclo in Saigon</div>
+                <div class="image-description">
+                  Traditional pedicab transportation
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/download (10).jpg"
+                alt="Nature"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Southeast Asian Beauty</div>
+                <div class="image-description">
+                  Natural landscapes and cultural heritage
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/download (12).jpg"
+                alt="Forest"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Tropical Forest Trail</div>
+                <div class="image-description">
+                  Dense jungle pathways of Cambodia
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/download (13).jpg"
+                alt="Lake"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Tonlé Sap Lake</div>
+                <div class="image-description">
+                  Cambodia's great lake and fishing communities
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/download (14).jpg"
+                alt="Trail"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Mountain Trails</div>
+                <div class="image-description">
+                  Highland paths through Southeast Asia
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/download (7).jpg"
+                alt="Peak"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Mountain Peaks</div>
+                <div class="image-description">
+                  Majestic highlands of Indochina
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/download (9).jpg"
+                alt="Sunset"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Golden Sunset</div>
+                <div class="image-description">
+                  Evening colors over Cambodia
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Gilles Marcil.jpg"
+                alt="Valley"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Gilles Marcil Photography</div>
+                <div class="image-description">
+                  Artistic captures of Southeast Asia
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/hi.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Hidden Valleys</div>
+                <div class="image-description">
+                  Remote landscapes of Cambodia
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Postage Stamp Cambodia 1985_ Absara Traditional Dance Editorial Stock Photo - Image of design, graphic_ 221106598.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">1985 Apsara Dance Stamp</div>
+                <div class="image-description">
+                  Traditional Cambodian dance heritage
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Sinn Sisamouth  Design by SokHeng - Kelly Korn.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Sinn Sisamouth</div>
+                <div class="image-description">The King of Cambodian Music</div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Tourists buying souvenirs at the Bayon, Angkor, postcard 1960 — at Siem Reap, Cambodia_.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Bayon Temple Souvenirs</div>
+                <div class="image-description">
+                  Tourists at Angkor, 1960 postcard
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/with Lon Nol.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">General Lon Nol</div>
+                <div class="image-description">
+                  Historical figure of Cambodia
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Independent Monument 1969_ Created in 1958 and decorated with 100 naga's heads_.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Independence Monument 1969</div>
+                <div class="image-description">
+                  Created 1958, decorated with 100 naga heads
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Phnom Penh, Cambodia back around in 1954.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Phnom Penh 1954</div>
+                <div class="image-description">Historic capital cityscape</div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Vintage Cambodge.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Vintage Cambodge</div>
+                <div class="image-description">
+                  French colonial era memories
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/A lovely place_  A lovely country.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">A Lovely Country</div>
+                <div class="image-description">
+                  Beauty of Cambodia's landscapes
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Cambodia old photos.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Cambodia Old Photos</div>
+                <div class="image-description">
+                  Vintage photography collection
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/cambodian vintage movie 🇰🇭.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Cambodian Vintage Cinema</div>
+                <div class="image-description">Golden age of Khmer film</div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/cyclo- pedicab in Saigon, Vietnam.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Traditional Cyclo</div>
+                <div class="image-description">Pedicab transport in Saigon</div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/download (15).jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Historical Moments</div>
+                <div class="image-description">
+                  Captured memories of the past
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/របាំព្រះរាជទ្រព្យខ្មែរ🇰🇭♥️.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Royal Khmer Dance</div>
+                <div class="image-description">
+                  Traditional ceremonial performances
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/download (16).jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Historical Archive</div>
+                <div class="image-description">Preserved cultural heritage</div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg shadow-[0_4px_10px_rgba(122,97,74,0.3)] overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/General Lon Nol's Photo Album.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">General Lon Nol Photo Album</div>
+                <div class="image-description">
+                  Personal collection of military leader
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/https___youtu_be_p3PqdktanUM.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Cambodian Music Archive</div>
+                <div class="image-description">Preserving musical heritage</div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/HugeDomains_com.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Heritage Sites</div>
+                <div class="image-description">
+                  Architectural wonders of Cambodia
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item break-inside-avoid">
+            <div
+              class="rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            >
+              <img
+                src="./assets/img/card-img/Relax.jpg"
+                alt="Flowers"
+                class="w-full border border-black rounded-lg"
+              />
+              <div class="image-overlay">
+                <div class="image-caption">Peaceful Moments</div>
+                <div class="image-description">
+                  Tranquil scenes from the past
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center rounded-full p-4 mt-4 border border-black shadow-lg"
+        >
+          © 2025 FotoMood
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        if (menu.classList.contains("max-h-0")) {
+          // OPEN MENU
+          menu.classList.remove("max-h-0", "opacity-0");
+          menu.classList.add("max-h-[500px]", "opacity-100");
+        } else {
+          // CLOSE MENU
+          menu.classList.add("max-h-0", "opacity-0");
+          menu.classList.remove("max-h-[500px]", "opacity-100");
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </body>
+</html>
