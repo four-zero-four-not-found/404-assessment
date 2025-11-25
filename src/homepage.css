@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+     font-family: 'Special Elite', cursive;
    
 }
 
@@ -94,6 +95,7 @@ header {
     /* default: align under the left/logo */
     width: 260px;
     background: #111;
+   
     color: #fff;
     padding: 18px;
     border-radius: 6px;
@@ -181,9 +183,7 @@ header {
     display: block;
 }
 
-.foto {
-    font-family: 'Special Elite', cursive;
-}
+
 
 
 /*Scrolling Images*/
