@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Special Elite', system-ui;
 }
 
 
@@ -68,7 +69,6 @@ header {
     font-size: 20px;
     letter-spacing: 0.5px;
     pointer-events: none;
-    font-family: 'Special Elite', cursive;
     /* makes sure items on top don't block clicks */
 
 }
@@ -139,7 +139,7 @@ header {
     margin-bottom: 12px;
     font-size: 20px;
     letter-spacing: 1px;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .menu ul {
@@ -151,19 +151,16 @@ header {
 .menu li {
     padding: 10px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.04);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .menu li a {
     color: #ffffff;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+   
 }
 
 .menu li a:hover {
     text-decoration: underline;
-
 
 }
 
@@ -256,6 +253,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     padding: 16px;
+   
 }
 
 .pin:hover {
@@ -266,6 +264,7 @@ header {
     width: 100%;
     display: block;
     border-radius: 16px;
+    
 }
 
 
@@ -297,6 +296,7 @@ header {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 4px;
+    /* break-inside: avoid; */
 }
 
 .pin-source {

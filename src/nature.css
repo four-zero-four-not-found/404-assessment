@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Special Elite', system-ui;
 }
 
 body {
@@ -61,7 +62,7 @@ header {
     font-size: 20px;
     letter-spacing: 0.5px;
     pointer-events: none;
-    font-family: 'Special Elite', cursive;
+    
     /* makes sure items on top don't block clicks */
 
 }

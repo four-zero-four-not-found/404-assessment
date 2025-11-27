@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
+* {
+    font-family: "Special Elite", system-ui; 
+}
 body {
     margin: 0;
    
@@ -14,7 +17,7 @@ header {
     align-items: center;
     padding: 15px 20px;
     position: relative;
-    background: white;
+    background: rgb(255, 255, 255);
     border-bottom: 1px solid #eee;
 }
 
@@ -232,8 +235,8 @@ header {
 .carousel-track {
     width: max-content;
     display: flex;
-    animation: seang 30s ease-in-out 2;
-    animation: seang 30s linear 2;
+    animation: seang 30s ease-in-out infinite;
+    animation: seang 30s linear infinite;
 
 }
 
@@ -272,7 +275,7 @@ header {
 }
 
 /* FOOTER FIX */
-footer {
+/* footer {
     background-color: #000;
     color: white;
     padding: 40px;
@@ -283,4 +286,4 @@ footer {
     color: rgb(110, 110, 241);
     text-decoration: underline;
 
-}
+} */
