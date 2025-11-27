@@ -93,7 +93,7 @@ header {
     right: 20px;
     /* default: align under the left/logo */
     width: 260px;
-    background: #111;
+    background: #000000;
     color: #fff;
     padding: 18px;
     border-radius: 6px;
@@ -209,7 +209,6 @@ header {
 
 
 .left-pic1 {
-
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -233,8 +232,8 @@ header {
 .carousel-track {
     width: max-content;
     display: flex;
-    animation: worm 30s linear infinite;
-    animation: worm 20s linear infinite;
+    animation: seang 30s ease-in-out 2;
+    animation: seang 30s linear 2;
 
 }
 
@@ -253,10 +252,10 @@ header {
 }
 
 .carousel-img:hover {
-    transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1);
 }
 
-@keyframes worm {
+@keyframes seang{
     0% {
         transform: translateX(0);
     }

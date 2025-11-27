@@ -229,7 +229,7 @@ header {
 }
 
 .pin {
-    break-inside: avoid;
+    /* break-inside: avoid; */
     margin-bottom: 16px;
     cursor: pointer;
     position: relative;
