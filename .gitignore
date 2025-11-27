@@ -1,0 +1,12 @@
+# Editor settings
+.vscode/
+
+# Build output
+dist/
+
+# All CSS files
+*.css
+
+# All HTML files
+*.html
+
