@@ -370,3 +370,136 @@ h1 {
   }
 
 }
+
+/*Desktop or Tablet view*/
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .team {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .team-member img {
+    width: 160px;
+    height: 160px;
+  }
+  .img1-overlay {
+     width: 160px;
+    height: 160px;
+  }
+
+  .img1-overlay .img1-title span{
+     color: rgb(0, 0, 0);
+
+  font-weight: bold;
+  font-size: 11px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  top: 50%;
+  left: -45px;
+  }
+  .img1-overlay .front-end span{
+     font-size: 9px;
+  font-weight: 100;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  top: 60%;
+  right: 10px;
+  color: #000000;
+  letter-spacing: 0.3ch;
+ 
+
+  }
+  .picture2{
+     width: 80%;
+    padding: 40px;
+  }
+}
+
+
+/*Phone view*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .team {
+    flex-wrap: wrap;
+    padding: 30px 10px;
+  }
+
+  .team-member {
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .team-member img {
+    width: 150px;
+    height: 150px;
+  }
+  .img1-overlay {
+     width: 150px;
+    height: 150px;
+  }
+
+  .img1-overlay .img1-title span{
+     color: rgb(0, 0, 0);
+
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  top: 50%;
+  left: -48px;
+  }
+
+    .img1-overlay .front-end span{
+     font-size: 8px;
+  font-weight: 100;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  top: 60%;
+  right: 10px;
+  color: #000000;
+  letter-spacing: 0.317ch;
+
+  }
+
+  .picture2 {
+    width: 80%;
+    padding: 40px;
+  }
+  .site-map {
+    margin: 10px;
+  }
+  .legal {
+    margin-left: 10px;
+  }
+
+}
