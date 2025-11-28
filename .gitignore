@@ -12,6 +12,7 @@ src/nature.css
 src/landscape.css
 src/homepage.css
 src/about.css
+src/hello.css
 
 
 # All HTML files
@@ -22,4 +23,5 @@ src/about.css
 .src/landscape.html
 .src/homepage.html
 .src/about.html
+.src/hello.html
 
