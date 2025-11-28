@@ -16,12 +16,22 @@ src/hello.css
 
 
 # All HTML files
-.src/index.html
-.src/street.html
-.src/people.html
-.src/nature.html
-.src/landscape.html
-.src/homepage.html
-.src/about.html
-.src/hello.html
+src/index.html
+src/street.html
+src/people.html
+src/nature.html
+src/landscape.html
+src/homepage.html
+src/about.html
+src/hello.html
 
+# Asset
+src/assets/homeimg
+src/assets/img
+src/assets/landscape
+src/assets/last-main
+src/assets/natureimg
+src/assets/peopleimg
+src/assets/sky
+src/assets/street
+src/assets/video
