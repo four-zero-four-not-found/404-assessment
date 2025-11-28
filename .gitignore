@@ -5,8 +5,21 @@
 dist/
 
 # All CSS files
-*.css
+style.css
+street.css
+people.css
+nature.css
+landscape.css
+homepage.css
+about.css
+
 
 # All HTML files
-*.html
+index.html
+street.html
+people.html
+nature.html
+landscape.html
+homepage.html
+about.html
 
